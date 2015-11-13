@@ -1345,16 +1345,12 @@ public class Robot {
 	 * </p>
 	 */
 	public void turnAround() {
-
-		left();
-
 		try {
-			Thread.sleep(DELAY);
-		} catch (final InterruptedException e) {
-		}
-
-		left();
-
+			left();
+			Thread.sleep(600);
+			left();
+			Thread.sleep(1200);
+		} catch (final InterruptedException e) {}
 	}
 
 	/**
@@ -1424,7 +1420,7 @@ public class Robot {
 		generalSend(command);
 
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		} catch (final InterruptedException e) {
 		}
 
