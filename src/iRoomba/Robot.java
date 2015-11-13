@@ -900,7 +900,8 @@ public class Robot {
 		return toStr(webview.get("advanced"));
 
 	}
-
+	
+	
 	// Utility Methods \\
 	/**
 	 * Fetches a JSON response from a URL
@@ -1220,7 +1221,8 @@ public class Robot {
 		return translation;
 
 	}
-
+	
+	
 	// Basic Movement Methods \\
 	/**
 	 * Drive with a given direction and speed. <br>
@@ -1384,7 +1386,8 @@ public class Robot {
 		generalSend(command);
 
 	}
-
+	
+	
 	// Advanced Functions \\
 	/**
 	 * Go back to the docking station.
@@ -1436,7 +1439,8 @@ public class Robot {
 		generalSend(command);
 
 	}
-
+	
+	
 	// Mode Control \\
 	/**
 	 * Controls the vacuum and brushes. <br>
@@ -1518,7 +1522,8 @@ public class Robot {
 		generalSend(command);
 
 	}
-
+	
+	
 	// Cleaning Methods \\
 	/**
 	 * Starts or stops a cleaning cycle.
@@ -1594,11 +1599,13 @@ public class Robot {
 		generalSend(command);
 
 	}
-
+	
+	
 	// Schedule Methods \\
 
 	// NOT IMPLEMENTED.
-
+	
+	
 	/**
 	 * This will be executed each time a program starts up the Robot class. <br>
 	 * Ensures that the Robot is ready and waiting to receive its first command.
