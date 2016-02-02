@@ -861,7 +861,12 @@ public class Robot {
 		return near_homebase;
 
 	}
-
+	
+	/**
+	 * Access the infrared sensors on the Roomba.
+	 * @param IRLocation Can be omni, left, or right (o, l, r).
+	 * @return An integer representing the location relative to the sensor.
+	 */
 	public int getIRReadings(String IRLocation) {
 
 		sensors();
@@ -1118,103 +1123,103 @@ public class Robot {
 
 		switch (state) {
 		case "st_base":
-			translation = "I'm at the homebase, not doing anything.";
+			translation = "At homebase.";
 			break;
 
 		case "st_base_recon":
-			translation = "I'm at the homebase, doing some reconditioning charging.";
+			translation = "At homebase, reconditioning charging.";
 			break;
 
 		case "st_base_full":
-			translation = "I'm at the homebase, charging.";
+			translation = "At homebase, charging.";
 			break;
 
 		case "st_base_trickle":
-			translation = "I'm at the homebase, doing a little charging.";
+			translation = "At homebase, trickle charging.";
 			break;
 
 		case "st_base_wait":
-			translation = "I'm waiting at the homebase, tell me if you want to me to do something.";
+			translation = "At homebase, waiting.";
 			break;
 
 		case "st_plug":
-			translation = "I'm plugged in, not doing much of anything.";
+			translation = "Plugged in.";
 			break;
 
 		case "st_plug_recon":
-			translation = "I'm plugged in, doing a little reconditioning charging.";
+			translation = "Plugged in, reconditioning charging.";
 			break;
 
 		case "st_plug_full":
-			translation = "I'm plugged in and charging.";
+			translation = "Plugged in, charging.";
 			break;
 
 		case "st_plug_trickle":
-			translation = "I'm plugged in and doing a little charging.";
+			translation = "Plugged in, trickle charging.";
 			break;
 
 		case "st_plug_wait":
-			translation = "I'm plugged in, and ready for you to tell me what to do.";
+			translation = "Plugged in, waiting.";
 			break;
 
 		case "st_stopped":
-			translation = "I've stopped.";
+			translation = "Stopped.";
 			break;
 
 		case "st_clean":
-			translation = "I'm cleaning right now.";
+			translation = "Cleaning.";
 			break;
 
 		case "st_cleanstop":
-			translation = "I'm just getting done with some cleaning.";
+			translation = "Done cleaning.";
 			break;
 
 		case "st_clean_spot":
-			translation = "I'm cleaning this spot, it's a bit dirty.";
+			translation = "Cleaning spot.";
 			break;
 
 		case "st_clean_max":
-			translation = "I'm cleaning as much as I can.";
+			translation = "Max cleaning.";
 			break;
 
 		case "st_delayed":
-			translation = "I'm about to start cleaning.";
+			translation = "Delayed cleaning.";
 			break;
 
 		case "st_dock":
-			translation = "I'm looking for the homebase, could you give me a push in the right direction?";
+			translation = "Docking.";
 			break;
 
 		case "st_pickup":
-			translation = "Put me down! I get dizzy when you pick me up.";
+			translation = "Picked up.";
 			break;
 
 		case "st_remote":
-			translation = "I'm being moved remotely and I don't like it.";
+			translation = "Being controlled.";
 			break;
 
 		case "st_wait":
-			translation = "I'm bored, don't you have anything for me to do?";
+			translation = "Waiting.";
 			break;
 
 		case "st_off":
-			translation = "Not so loud. I'm sleeping.";
+			translation = "Turned off.";
 			break;
 
 		case "st_error":
-			translation = "I think there's something wrong, can you check?";
+			translation = "Error";
 			break;
 
 		case "st_locate":
-			translation = "I'm lost, please find me.";
+			translation = "Locating.";
 			break;
 
 		case "st_unknown":
-			translation = "I don't really know what's going on.";
+			translation = "Unknown.";
 			break;
 
 		default:
-			translation = "I may or may not be doing something right now.";
+			translation = "NULL";
 			break;
 		}
 
